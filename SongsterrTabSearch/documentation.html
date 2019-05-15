@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Tab Search Documentation</title>
+</head>
+
+<body>
+   <header>
+       <h1>
+           Documentation
+       </h1>
+   </header>
+   
+   <div id="mainBody">
+        <div class="selection">
+            Sources:
+            <br>
+            API: https://www.songsterr.com/a/wa/api/
+            <br>
+            Otherwise, I used Stack Overflow for code consultation and mostly just used the code from the GIF Finder as a basis.
+        </div> 
+        <div class="selection">
+            General Documentation
+            <br>
+            The page uses Songsterr's web API in order to pull song and artist requests based on input, and returns a link for the respective tab or list of tabs.
+            <br>
+            The search for a song by name (first search) can be narrowed down by adding the name of the artist in the query. Otherwise, the top result with the containing words will be returned.
+            <br>
+            The search by artist will return a link to the list of songs by that artist from Songsterr.
+            <br>
+            While I wanted to create a list of results, the way in which Songsterr returns results ended up being extremely different and difficult to properly handle, and so I was unable to.
+            <br>
+            The two random buttons will draw from preset arrays of 10 options that I created, and the Top Songs button will return Songsterr's top results/most clicked songs.
+            <br>
+            The final addition is an Auto-Load button, which will open the result in a new window once a Search button is clicked. This is initially blocked by the pop-up blocker, naturally.
+        </div> 
+    </div>
+        
+    <footer id="mainFooter">
+        Raman Mandavia | 2nd Year Game Design and Development | <a href="../index.html" class="cleanLink">Home Page</a> | <a href="index.html" class="cleanLink">Main Page</a>
+    </footer>
+    
+    <footer id="mobileFooter">
+        Raman Mandavia | <a href="../index.html" class="cleanLink">Home Page</a> | <a href="index.html" class="cleanLink">Main Page</a>
+    </footer>
+    </body>
+
+</html>

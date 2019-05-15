@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js";></script>
+    <script src="js/main.js"></script>
+    <title>Songsterr Song Search</title>
+</head>
+
+<body>
+   <header>
+       <h1>
+           Songsterr Tab Search
+       </h1>
+   </header>
+   
+   <div id="mainBody">
+        <div class="selection">
+            Search by Song Title (add the band name to further specify the search):
+            <br>
+            <div class="inputbox">
+                <input id="songtitle" type="text" size="30" value=""/>
+            </div>
+        </div> 
+
+        <div class="selection">
+            Search by Artist (gives all tabs available for the artist):
+            <br>
+            <div class="inputbox">
+                <input id="artist" type="text" size="30" value=""/>
+            </div>
+        </div>
+
+       <div class="checkbox">
+            <input type="checkbox" id="autoload" value="AutoLoad" /> Auto Load Page?
+        </div>
+       
+        <div class="button">
+            <button type="button" id="searchTitle">
+                Search by Song Title
+            </button>
+            
+            <button type="button" id="searchArtist">
+                Search by Artist
+            </button>
+            
+            <button type="button" id="randomSong">
+                Random Song
+            </button>
+            
+            <button type="button" id="randomArtist">
+                Random Artist
+            </button>
+               
+            <button type="button" id="topTabs">
+                Top Tabs
+            </button>
+       </div>
+        
+        <hr>
+        
+        <h2>
+            Tab Link:
+        </h2>
+        <div id="result">
+            <p> None </p>
+        </div>
+    </div>
+    
+    <footer id="mainFooter">
+        Raman Mandavia | 2nd Year Game Design and Development | <a href="../index.html" class="cleanLink">Home Page</a> | <a href="documentation.html" class="cleanLink">Documentation</a>
+    </footer>
+    
+    <footer id="mobileFooter">
+        Raman Mandavia | <a href="../index.html" class="cleanLink">Home Page</a> | <a href="documentation.html" class="cleanLink">Documentation</a>
+    </footer>
+</body>
+
+<script src="js/dataStorage.js"></script>
+
+</html>

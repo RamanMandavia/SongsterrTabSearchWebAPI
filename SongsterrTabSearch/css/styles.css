@@ -1,0 +1,207 @@
+/* Font Declaration */
+@font-face {
+    font-family: MusicWarrior;
+    src: url(fonts/music_warrior.ttf);
+}
+@font-face {
+    font-family: LouisGeorgeCafe;
+    src: url(fonts/louis_george_cafe.ttf);
+}
+@font-face {
+    font-family: BandLogos;
+    src: url(fonts/band_logos.ttf);
+}
+@font-face {
+    font-family: StringsTheory;
+    src: url(fonts/strings_theory.otf);
+}
+
+/* Page Styling */
+*{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    background-image: url(../images/blackandwhitebg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 90%;
+    margin: 3% 0 3% 0;
+}
+
+h1{
+    margin: 0 22% 0 22%;
+    text-align: center;
+    font-size: 3em;
+    border-bottom: 3px solid #00d0e2;
+    border-top: 3px solid #00d0e2;
+    border-right: 3px solid #00d0e2;
+    font-family: StringsTheory;
+}
+
+h2{
+    font-weight: 300;
+    margin: 1% 0 .5% 0;
+    padding: .4%;
+    background-color: rgba(13, 209, 0, .85);
+}
+
+#mainBody{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    font-size: 1.2em;
+    font-family: LouisGeorgeCafe;
+}
+
+div .selection{
+    margin: 1% 0% 1% 0;
+    padding: .4%;
+    background-color: rgba(13, 209, 0, .85);
+}
+
+div .inputbox{
+    margin: 0 0 0 8%;
+}
+
+button{
+    cursor: pointer;
+    
+    font-family: LouisGeorgeCafe;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline;
+    
+    padding: .5%;
+    border: 3px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #00d0e2;
+    
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+button:hover{
+    background-color: #0070d3;
+    border-width: 4.5px;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+button:active{
+    border-width: 0;
+    background-color: #00d0e2;
+}
+
+div .checkbox{
+    padding: .1%;
+    background-color: rgba(13, 209, 0, .85);
+}
+
+div #result{
+    padding: .4%;
+    background-color: rgba(13, 209, 0, .85);
+    border: 2px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+div #result a{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div #result a:hover{
+    color: #00d0e2;
+}
+
+#mainFooter{
+    font-family: LouisGeorgeCafe;
+    bottom: 0;
+    position: fixed;
+    width: 60%;
+    height: auto;
+    margin: 0 15% 0 15%;
+    padding: 0 5% 0 5%;
+    font-size: 1em;
+    font-weight: 200;
+    display: block;
+    background-color: rgba(13, 209, 0, .85);
+    border-top: 2px solid #00d0e2;
+    border-right: 2px solid #00d0e2;
+    border-left: 2px solid #00d0e2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer a{
+    color: white;
+}
+
+#mobileFooter{
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px){
+    h1{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 865px){
+    #mainBody{
+        font-size: 1.1em;
+    }
+    
+    button{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 865px){
+    
+    h1{
+        font-size: 1.75em;
+    }
+    
+    #mainBody{
+        font-size: 1em;
+    }
+    
+    button{
+        font-size: 1em;
+    }
+    
+    #mainFooter{
+        display: none;
+    }
+    
+    #mobileFooter{
+        font-family: LouisGeorgeCafe;
+        bottom: 0;
+        position: fixed;
+        width: 60%;
+        height: auto;
+        margin: 0 15% 0 15%;
+        padding: 0 5% 0 5%;
+        font-size: .8em;
+        display: block;
+        background-color: rgba(13, 209, 0, .85);
+        border-top: 2px solid #00d0e2;
+        border-right: 2px solid #00d0e2;
+        border-left: 2px solid #00d0e2;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
